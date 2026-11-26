@@ -166,7 +166,126 @@ dialog{border:0;border-radius:23px;padding:25px;background:#fff;color:var(--ink)
 @media (max-width: 920px) { .island { flex-wrap: nowrap; } }
 
 .footer-wrap a:focus-visible { outline-color: #ffe4aa; }
-</style></head><body><a class="skip-link" href="#main">Skip to main content</a><header class="island"><a class="brand" href="#home" aria-label="Mazal Way"><img class="logo" src="../assets/mazal-way-logo-v2.svg" alt="Mazal Way" width="1737" height="449"><img class="compact" src="../assets/mazal-way-mark.svg" alt="Mazal Way" width="48" height="48"></a><nav class="desktop-nav" aria-label="Open menu"><a href="#details">Care options</a><a href="#juliana">Meet the owner</a><a href="#questions">Questions</a></nav><div class="header-tools"><div class="contact-actions header-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=Hi%21%20I%27d%20like%20to%20learn%20about%20care%20at%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Call us +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div><div class="language" aria-label="English / Español / Русский"><a href="../en/index.html" lang="en" hreflang="en" aria-label="EN – English" aria-current="page"><span aria-hidden="true">🇺🇸</span><span>EN</span></a><a href="../es/index.html" lang="es" hreflang="es" aria-label="ES – Español"><span aria-hidden="true">🇲🇽</span><span>ES</span></a><a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="RU – Русский"><span aria-hidden="true">🇷🇺</span><span>RU</span></a></div><details class="mobile-menu"><summary aria-label="Open menu"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary><nav><a href="#details">Care options</a><a href="#juliana">Meet the owner</a><a href="#questions">Questions</a><a href="#gallery">Play and discovery</a><a href="#location">We&#x27;re in Winnetka</a><div class="contact-actions "><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=Hi%21%20I%27d%20like%20to%20learn%20about%20care%20at%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Call us +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></nav></details></div></header><main id="main" tabindex="-1"><section id="home" class="hero shell"><div class="hero-copy"><p class="eyebrow"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span>Home daycare · Winnetka, CA</p><h1>Looking for child care? Let&#x27;s meet.</h1><p class="lead">A home daycare in Winnetka, Los Angeles.</p><a class="clay-button" href="#contact">Ask about availability</a></div><div class="hero-art"><img src="../assets/hero-1120.webp" srcset="../assets/hero-640.webp 640w, ../assets/hero-1120.webp 1120w" sizes="(max-width: 760px) 92vw, 48vw" alt="" width="1120" height="1120" fetchpriority="high"></div></section><section id="details" class="shell essentials"><h2 class="essentials-title">Planned care details</h2><div class="facts"><div><span>Ages</span><strong>2 months–12 years</strong></div><div><span>Hours</span><strong>8 a.m.–6 p.m.</strong></div><div><span>Days</span><strong>7 days a week</strong></div><div><span>Tuition</span><strong>Ask for current rates</strong></div></div><a class="license-link" href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">California child care license #195700853</a></section><section id="gallery" class="shell section gallery">
+
+.essentials-links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 22px;
+}
+
+.care-section { max-width: 860px; padding-block: clamp(32px, 5vw, 55px); }
+.care-highlights-section { padding-bottom: 12px; }
+.care-section h2, .care-highlights-section h2 { margin-block-end: 10px; }
+.care-highlights-section h2 { font-size: clamp(1.55rem, 3vw, 2.1rem); }
+.care-intro, .care-note { color: var(--muted); }
+.care-intro { margin: 0 0 18px; }
+.care-note { margin: 14px 0 0; font-size: .94rem; }
+
+.care-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+.care-highlights li {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: #fff;
+}
+.care-highlights li:nth-child(2) { background: #f5effd; }
+.care-highlights li:nth-child(3) { background: #fff3da; }
+.care-highlights .care-time { display: block; margin-bottom: 4px; }
+.care-highlights--benefits { margin-bottom: 0; }
+.care-highlights--benefits h3 { margin: 0 0 5px; font-size: 1.06rem; }
+.care-highlights--benefits p { margin: 0; color: var(--muted); }
+
+.care-week {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+.care-disclosure + .care-disclosure { border-top: 1px solid var(--line); }
+.care-disclosure summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 12px 17px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+.care-disclosure summary::-webkit-details-marker { display: none; }
+.care-disclosure summary::after {
+  content: "";
+  flex: none;
+  align-self: center;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px 4px auto;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+.care-disclosure[open] summary::after { transform: rotate(225deg); margin-bottom: -4px; }
+.care-disclosure summary:hover, .care-disclosure[open] summary { background: #f4f8ff; }
+.care-disclosure summary:focus-visible { outline-offset: -4px; }
+.care-weekday { flex: 0 1 7rem; color: var(--muted); }
+.care-disclosure summary strong { min-width: 0; }
+.care-full-day { overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+
+.care-time {
+  color: var(--muted);
+  font-size: .88rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+.care-timeline { list-style: none; margin: 0; padding: 2px 17px 12px; }
+.care-timeline li {
+  display: grid;
+  grid-template-columns: minmax(9rem, max-content) 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding: 8px 0;
+}
+.care-timeline li + li { border-top: 1px solid var(--line); }
+.care-age-groups, .care-meals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  margin: 0;
+  padding: 15px 17px 19px;
+}
+.care-age-groups dt, .care-meals dt { font-weight: 700; }
+.care-meals .care-time { display: block; margin: 2px 0; }
+.care-age-groups dd, .care-meals dd { margin: 3px 0 0; color: var(--muted); }
+
+@media (max-width: 700px) {
+  .care-highlights--benefits { grid-template-columns: 1fr; gap: 8px; }
+}
+@media (max-width: 500px) {
+  .care-highlights { grid-template-columns: 1fr; gap: 8px; }
+  .care-highlights li {
+    display: grid;
+    grid-template-columns: minmax(0, 6.8rem) minmax(0, 1fr);
+    align-items: baseline;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .care-highlights .care-time { margin: 0; }
+  .care-highlights--benefits li { display: block; }
+  .care-timeline li { grid-template-columns: minmax(0, 6.8rem) minmax(0, 1fr); gap: 9px; }
+  .care-age-groups, .care-meals { grid-template-columns: 1fr; gap: 10px; }
+  .care-meals dt { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0 8px; }
+}
+</style></head><body><a class="skip-link" href="#main">Skip to main content</a><header class="island"><a class="brand" href="#home" aria-label="Mazal Way"><img class="logo" src="../assets/mazal-way-logo-v2.svg" alt="Mazal Way" width="1737" height="449"><img class="compact" src="../assets/mazal-way-mark.svg" alt="Mazal Way" width="48" height="48"></a><nav class="desktop-nav" aria-label="Open menu"><a href="#details">Care options</a><a href="#juliana">Meet the owner</a><a href="#questions">Questions</a></nav><div class="header-tools"><div class="contact-actions header-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=Hi%21%20I%27d%20like%20to%20learn%20about%20care%20at%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Call us +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div><div class="language" aria-label="English / Español / Русский"><a href="../en/index.html" lang="en" hreflang="en" aria-label="EN – English" aria-current="page"><span aria-hidden="true">🇺🇸</span><span>EN</span></a><a href="../es/index.html" lang="es" hreflang="es" aria-label="ES – Español"><span aria-hidden="true">🇲🇽</span><span>ES</span></a><a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="RU – Русский"><span aria-hidden="true">🇷🇺</span><span>RU</span></a></div><details class="mobile-menu"><summary aria-label="Open menu"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary><nav><a href="#details">Care options</a><a href="#juliana">Meet the owner</a><a href="#questions">Questions</a><a href="#gallery">Play and discovery</a><a href="#location">We&#x27;re in Winnetka</a><div class="contact-actions "><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=Hi%21%20I%27d%20like%20to%20learn%20about%20care%20at%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Call us +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></nav></details></div></header><main id="main" tabindex="-1"><section id="home" class="hero shell"><div class="hero-copy"><p class="eyebrow"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span>Home daycare · Winnetka, CA</p><h1>Looking for child care? Let&#x27;s meet.</h1><p class="lead">A home daycare in Winnetka, Los Angeles.</p><a class="clay-button" href="#contact">Ask about availability</a></div><div class="hero-art"><img src="../assets/hero-1120.webp" srcset="../assets/hero-640.webp 640w, ../assets/hero-1120.webp 1120w" sizes="(max-width: 760px) 92vw, 48vw" alt="" width="1120" height="1120" fetchpriority="high"></div></section><section id="details" class="shell essentials"><h2 class="essentials-title">Planned care details</h2><div class="facts"><div><span>Ages</span><strong>2 months–12 years</strong></div><div><span>Hours</span><strong>8 a.m.–6 p.m.</strong></div><div><span>Days</span><strong>7 days a week</strong></div><div><span>Tuition</span><strong>Ask for current rates</strong></div></div><div class="essentials-links"><a class="license-link" href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">California child care license #195700853</a><a class="license-link" href="#day">Daily schedule, activities and menu</a></div></section><section id="highlights" class="shell essentials care-highlights-section" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading">What makes Mazal Way different</h2>
+      <ul class="care-highlights care-highlights--benefits"><li><h3>A home daycare</h3><p class="">A licensed home daycare in Winnetka, run by Juliana.</p></li><li><h3>Activities by age</h3><p class="">Younger children learn through songs and play. Older preschoolers try patterns, stories, and more.</p></li><li><h3>Overnight care</h3><p class="">Arrange overnight care in advance. It’s priced separately.</p></li></ul>
+    </section><section id="gallery" class="shell section gallery">
       <div class="gallery-heading"><h2>Play and discovery</h2></div>
       <div class="media-grid"><figure class="media-item media-item--landscape">
           <button class="media-cover" type="button" data-media-kind="photo"
@@ -181,7 +300,54 @@ dialog{border:0;border-radius:23px;padding:25px;background:#fff;color:var(--ink)
             <img class="" src="../assets/video-poster-ai-v1.png" alt="Stacking blocks" width="941" height="1672" loading="lazy" decoding="async"><span class="media-open"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></svg></span>
           </button><figcaption>Stacking blocks</figcaption>
         </figure></div>
-    </section><section id="contact" class="shell section contact"><div><h2>Ask about availability</h2><p class="body-large">Call to talk through your schedule or arrange a visit.</p><div class="contact-actions body-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=Hi%21%20I%27d%20like%20to%20learn%20about%20care%20at%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Call us +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></div><form autocomplete="off" onsubmit="return false"><fieldset disabled><div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div><div class="field"><label for="contact-value">Email or phone number *</label><input id="contact-value" name="contact" required maxlength="254"></div><details class="more-fields"><summary>Optional</summary><div class="field"><label for="age">Child&#x27;s age group</label><select name="ageGroup" id="age"><option value="0">Prefer to discuss</option><option value="1">Under 1 year</option><option value="2">1–2 years</option><option value="3">3–5 years</option><option value="4">6–12 years</option><option value="5">Another age</option></select></div><div class="field"><label for="start">When would you like to start?</label><input type="month" id="start" name="startMonth"></div><div class="field"><label for="schedule">Days or hours you need</label><input id="schedule" name="schedule" maxlength="300"></div><div class="field"><label for="message">Anything you&#x27;d like to ask?</label><textarea id="message" name="message" maxlength="2000"></textarea></div></details><button class="clay-button" type="submit" disabled>Send inquiry</button></fieldset></form></section><section id="visit" class="visit-section"><div class="shell"><h2>Let&#x27;s get to know each other.</h2><ol class="steps"><li><h3>Give us a call</h3></li><li><h3>Discuss your needs</h3></li><li><h3>Plan a visit</h3></li></ol></div></section><section id="questions" class="shell section faq"><h2>Common questions</h2><div class="faq-items"><details name="faq"><summary>What ages do you care for?</summary><p>We plan to care for children from 2 months through 12 years. Tell us your child’s age and when you’d need care so we can talk about openings.</p></details><details name="faq"><summary>What are your hours? Are you open on weekends?</summary><p>Our planned hours are 8 a.m. to 6 p.m., seven days a week. Check with us for the days you need.</p></details><details name="faq"><summary>How much does care cost?</summary><p>When you call, let us know your child’s age and the days and hours you need. <a href="tel:+13044044004">Call about rates</a></p></details><details name="faq"><summary>Is after-school or overnight care available?</summary><p>If you need care after school or overnight, tell us which days and hours. We can talk through what’s possible.</p></details><details name="faq"><summary>Can I come for a visit?</summary><p>Call us to find a time to come by and meet Juliana. <a href="tel:+13044044004">Call Mazal Way</a></p></details><details name="faq"><summary>Where are you located?</summary><p>We’re in Winnetka, CA 91306. We’ll share the address when we arrange your visit.</p></details><details name="faq"><summary>How can I check your license?</summary><p>Look for TULCHINSKAIA FAMILY CHILD CARE, license no. 195700853, in the California child care registry. <a href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">View the CDSS record</a></p></details><details name="faq"><summary>Does reaching out hold a spot?</summary><p>A spot is confirmed once enrollment is complete.</p></details></div></section><section id="juliana" class="owner-section">
+    </section><section id="contact" class="shell section contact"><div><h2>Ask about availability</h2><p class="body-large">Call to talk through your schedule or arrange a visit.</p><div class="contact-actions body-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=Hi%21%20I%27d%20like%20to%20learn%20about%20care%20at%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Call us +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></div><form autocomplete="off" onsubmit="return false"><fieldset disabled><div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div><div class="field"><label for="contact-value">Email or phone number *</label><input id="contact-value" name="contact" required maxlength="254"></div><details class="more-fields"><summary>Optional</summary><div class="field"><label for="age">Child&#x27;s age group</label><select name="ageGroup" id="age"><option value="0">Prefer to discuss</option><option value="1">Under 1 year</option><option value="2">1–2 years</option><option value="3">3–5 years</option><option value="4">6–12 years</option><option value="5">Another age</option></select></div><div class="field"><label for="start">When would you like to start?</label><input type="month" id="start" name="startMonth"></div><div class="field"><label for="schedule">Days or hours you need</label><input id="schedule" name="schedule" maxlength="300"></div><div class="field"><label for="message">Anything you&#x27;d like to ask?</label><textarea id="message" name="message" maxlength="2000"></textarea></div></details><button class="clay-button" type="submit" disabled>Send inquiry</button></fieldset></form></section><section id="day" class="shell section care-section" aria-labelledby="day-heading">
+      <h2 id="day-heading">A day at Mazal Way</h2>
+      <p class="care-intro">Sample daytime routine</p>
+      <ul class="care-highlights"><li><span class="care-time"><time datetime="09:00">9:00</time>–<time datetime="10:00">10:00 a.m.</time></span><strong>Outdoor play</strong></li><li><span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30 a.m.</time></span><strong>Activities from the weekly plan</strong></li><li><span class="care-time"><time datetime="13:00">1:00</time>–<time datetime="15:30">3:30 p.m.</time></span><strong>Nap time</strong></li></ul>
+      <details class="care-disclosure care-full-day">
+        <summary>See the full schedule</summary>
+        <ol class="care-timeline"><li><span class="care-time"><time datetime="08:00">8:00</time>–<time datetime="08:30">8:30 a.m.</time></span><span>Drop-off</span></li><li><span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a.m.</time></span><span>Breakfast</span></li><li><span class="care-time"><time datetime="09:00">9:00</time>–<time datetime="10:00">10:00 a.m.</time></span><span>Outdoor play</span></li><li><span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a.m.</time></span><span>Morning snack with fruit</span></li><li><span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30 a.m.</time></span><span>Activities from the weekly plan</span></li><li><span class="care-time"><time datetime="11:30">11:30 a.m.</time>–<time datetime="12:00">12:00 p.m.</time></span><span>Play with blocks, colors, and shapes</span></li><li><span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p.m.</time></span><span>Lunch</span></li><li><span class="care-time"><time datetime="12:30">12:30</time>–<time datetime="13:00">1:00 p.m.</time></span><span>Story time and getting ready for rest</span></li><li><span class="care-time"><time datetime="13:00">1:00</time>–<time datetime="15:30">3:30 p.m.</time></span><span>Nap time</span></li><li><span class="care-time"><time datetime="15:30">3:30</time>–<time datetime="16:00">4:00 p.m.</time></span><span>Wake up and play finger games</span></li><li><span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p.m.</time></span><span>Afternoon snack</span></li><li><span class="care-time"><time datetime="16:30">4:30</time>–<time datetime="18:00">6:00 p.m.</time></span><span>Outdoor time, free play, and pickup</span></li></ol>
+      </details>
+    </section><section id="activities" class="shell section care-section" aria-labelledby="activities-heading">
+      <h2 id="activities-heading">Activities for the week</h2>
+      <p class="care-intro">Sample activities for ages 2–5 · <span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30 a.m.</time></span></p>
+      <div class="care-week"><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Monday</span><strong>ABC and language</strong></summary>
+          <dl class="care-age-groups"><div><dt>Ages 2–3</dt><dd>Sing the ABCs, find the apple in a picture, and say “apple.”</dd></div><div><dt>Ages 4–5</dt><dd>Meet the letter A and find it in “apple” and in names.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Tuesday</span><strong>Music and rhythm</strong></summary>
+          <dl class="care-age-groups"><div><dt>Ages 2–3</dt><dd>Clap along to a song and freeze when the music stops.</dd></div><div><dt>Ages 4–5</dt><dd>Clap a rhythm and make up one for friends to try.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Wednesday</span><strong>Movement</strong></summary>
+          <dl class="care-age-groups"><div><dt>Ages 2–3</dt><dd>Walk along a path and reach up like giraffes.</dd></div><div><dt>Ages 4–5</dt><dd>Try an obstacle course and catch a ball with both hands.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Thursday</span><strong>Art</strong></summary>
+          <dl class="care-age-groups"><div><dt>Ages 2–3</dt><dd>Make sponge prints and name the colors.</dd></div><div><dt>Ages 4–5</dt><dd>Mix two colors, paint a picture, and tell us about it.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Friday</span><strong>Numbers, shapes, and patterns</strong></summary>
+          <dl class="care-age-groups"><div><dt>Ages 2–3</dt><dd>Count to three, find circles, and sort blocks by color.</dd></div><div><dt>Ages 4–5</dt><dd>Count up to ten objects and finish a pattern with two shapes.</dd></div></dl>
+        </details></div>
+    </section><section id="menu" class="shell section care-section" aria-labelledby="menu-heading">
+      <h2 id="menu-heading">Home-style menu</h2>
+      <p class="care-intro">Sample menu for Monday through Friday.</p>
+      <div class="care-week"><details class="care-disclosure" name="weekly-menu">
+          <summary>Monday</summary>
+          <dl class="care-meals"><div><dt>Breakfast <span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a.m.</time></span></dt><dd>Farmer cheese bake with applesauce</dd></div><div><dt>Morning snack <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a.m.</time></span></dt><dd>Soft pear and an oatmeal cookie</dd></div><div><dt>Lunch <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p.m.</time></span></dt><dd>Beef borscht with sour cream and a slice of bread</dd></div><div><dt>Afternoon snack <span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p.m.</time></span></dt><dd>Buckwheat with chicken and braised carrots</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Tuesday</summary>
+          <dl class="care-meals"><div><dt>Breakfast <span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a.m.</time></span></dt><dd>Oatmeal with milk and banana</dd></div><div><dt>Morning snack <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a.m.</time></span></dt><dd>Plain yogurt with peach</dd></div><div><dt>Lunch <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p.m.</time></span></dt><dd>Cauliflower and herb soup with bread</dd></div><div><dt>Afternoon snack <span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p.m.</time></span></dt><dd>Mashed potatoes with a turkey patty and cucumber</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Wednesday</summary>
+          <dl class="care-meals"><div><dt>Breakfast <span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a.m.</time></span></dt><dd>Cheese omelet and warm toast</dd></div><div><dt>Morning snack <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a.m.</time></span></dt><dd>Plain yogurt and pear</dd></div><div><dt>Lunch <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p.m.</time></span></dt><dd>Meatball soup with fine noodles and carrots</dd></div><div><dt>Afternoon snack <span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p.m.</time></span></dt><dd>Rice pilaf with chicken and carrots</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Thursday</summary>
+          <dl class="care-meals"><div><dt>Breakfast <span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a.m.</time></span></dt><dd>Rice porridge with milk and applesauce</dd></div><div><dt>Morning snack <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a.m.</time></span></dt><dd>Farmer cheese with mashed banana</dd></div><div><dt>Lunch <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p.m.</time></span></dt><dd>Chicken, pickle, and barley soup with bread</dd></div><div><dt>Afternoon snack <span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p.m.</time></span></dt><dd>Chicken meatballs, mashed potatoes, and broccoli</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Friday</summary>
+          <dl class="care-meals"><div><dt>Breakfast <span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a.m.</time></span></dt><dd>Unsweetened oats with milk and banana</dd></div><div><dt>Morning snack <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a.m.</time></span></dt><dd>Farmer cheese with applesauce</dd></div><div><dt>Lunch <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p.m.</time></span></dt><dd>Chicken noodle soup with dill</dd></div><div><dt>Afternoon snack <span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p.m.</time></span></dt><dd>Pasta with ground beef and a cucumber and tomato salad</dd></div></dl>
+        </details></div>
+      <p class="care-note">Please tell us about any food allergies or dietary restrictions before your child starts.</p>
+    </section><section id="visit" class="visit-section"><div class="shell"><h2>Let&#x27;s get to know each other.</h2><ol class="steps"><li><h3>Give us a call</h3></li><li><h3>Discuss your needs</h3></li><li><h3>Plan a visit</h3></li></ol></div></section><section id="questions" class="shell section faq"><h2>Common questions</h2><div class="faq-items"><details name="faq"><summary>What ages do you care for?</summary><p>We plan to care for children from 2 months through 12 years. Tell us your child’s age and when you’d need care so we can talk about openings.</p></details><details name="faq"><summary>What are your hours? Are you open on weekends?</summary><p>Our planned hours are 8 a.m. to 6 p.m., seven days a week. Check with us for the days you need.</p></details><details name="faq"><summary>How much does care cost?</summary><p>When you call, let us know your child’s age and the days and hours you need. <a href="tel:+13044044004">Call about rates</a></p></details><details name="faq"><summary>Can my child stay overnight?</summary><p>Overnight care is arranged in advance and priced separately. Call with the date and hours you need. <a href="tel:+13044044004">Ask about overnight care</a></p></details><details name="faq"><summary>Can my child come after school?</summary><p>Tell us the days and hours you need after school so we can talk through what’s possible.</p></details><details name="faq"><summary>What do children do during the day?</summary><p>There’s time for outdoor play, age-based activities, meals, and a nap. See a sample day, the weekly activities, and the menu. <a href="#day">See the daily routine</a></p></details><details name="faq"><summary>Can I come for a visit?</summary><p>Call us to find a time to come by and meet Juliana. <a href="tel:+13044044004">Call Mazal Way</a></p></details><details name="faq"><summary>Where are you located?</summary><p>We’re in Winnetka, CA 91306. We’ll share the address when we arrange your visit.</p></details><details name="faq"><summary>How can I check your license?</summary><p>Look for TULCHINSKAIA FAMILY CHILD CARE, license no. 195700853, in the California child care registry. <a href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">View the CDSS record</a></p></details><details name="faq"><summary>Does reaching out hold a spot?</summary><p>A spot is confirmed once enrollment is complete.</p></details></div></section><section id="juliana" class="owner-section">
       <div class="shell owner-grid">
         <figure class="owner-portrait"><img class="" src="../assets/juliana-portrait-800.webp" srcset="../assets/juliana-portrait-480.webp 480w, ../assets/juliana-portrait-800.webp 800w" sizes="(max-width: 380px) calc(100vw - 36px), 365px" alt="Juliana, founder of Mazal Way" width="800" height="1168" loading="lazy" decoding="async"></figure>
         <div class="owner-story">

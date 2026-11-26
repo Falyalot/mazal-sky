@@ -166,7 +166,126 @@ dialog{border:0;border-radius:23px;padding:25px;background:#fff;color:var(--ink)
 @media (max-width: 920px) { .island { flex-wrap: nowrap; } }
 
 .footer-wrap a:focus-visible { outline-color: #ffe4aa; }
-</style></head><body><a class="skip-link" href="#main">Перейти к основному содержанию</a><header class="island"><a class="brand" href="#home" aria-label="Mazal Way"><img class="logo" src="../assets/mazal-way-logo-v2.svg" alt="Mazal Way" width="1737" height="449"><img class="compact" src="../assets/mazal-way-mark.svg" alt="Mazal Way" width="48" height="48"></a><nav class="desktop-nav" aria-label="Открыть меню"><a href="#details">Условия</a><a href="#juliana">Владелица</a><a href="#questions">Вопросы</a></nav><div class="header-tools"><div class="contact-actions header-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D1%85%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Позвонить +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div><div class="language" aria-label="English / Español / Русский"><a href="../en/index.html" lang="en" hreflang="en" aria-label="EN – English"><span aria-hidden="true">🇺🇸</span><span>EN</span></a><a href="../es/index.html" lang="es" hreflang="es" aria-label="ES – Español"><span aria-hidden="true">🇲🇽</span><span>ES</span></a><a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="RU – Русский" aria-current="page"><span aria-hidden="true">🇷🇺</span><span>RU</span></a></div><details class="mobile-menu"><summary aria-label="Открыть меню"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary><nav><a href="#details">Условия</a><a href="#juliana">Владелица</a><a href="#questions">Вопросы</a><a href="#gallery">Игра и уют</a><a href="#location">Мы в Winnetka</a><div class="contact-actions "><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D1%85%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Позвонить +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></nav></details></div></header><main id="main" tabindex="-1"><section id="home" class="hero shell"><div class="hero-copy"><p class="eyebrow"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span>Домашний садик · Winnetka, CA</p><h1>Выбираете садик? Давайте познакомимся.</h1><p class="lead">Домашний садик в районе Winnetka, Лос-Анджелес.</p><a class="clay-button" href="#contact">Узнать о местах</a></div><div class="hero-art"><img src="../assets/hero-1120.webp" srcset="../assets/hero-640.webp 640w, ../assets/hero-1120.webp 1120w" sizes="(max-width: 760px) 92vw, 48vw" alt="" width="1120" height="1120" fetchpriority="high"></div></section><section id="details" class="shell essentials"><h2 class="essentials-title">Планируемые условия</h2><div class="facts"><div><span>Возраст</span><strong>От 2 месяцев до 12 лет</strong></div><div><span>Часы работы</span><strong>08:00–18:00</strong></div><div><span>Дни</span><strong>7 дней в неделю</strong></div><div><span>Стоимость</span><strong>Уточните актуальные условия</strong></div></div><a class="license-link" href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Лицензия на уход за детьми в Калифорнии № 195700853</a></section><section id="gallery" class="shell section gallery">
+
+.essentials-links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 22px;
+}
+
+.care-section { max-width: 860px; padding-block: clamp(32px, 5vw, 55px); }
+.care-highlights-section { padding-bottom: 12px; }
+.care-section h2, .care-highlights-section h2 { margin-block-end: 10px; }
+.care-highlights-section h2 { font-size: clamp(1.55rem, 3vw, 2.1rem); }
+.care-intro, .care-note { color: var(--muted); }
+.care-intro { margin: 0 0 18px; }
+.care-note { margin: 14px 0 0; font-size: .94rem; }
+
+.care-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+.care-highlights li {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: #fff;
+}
+.care-highlights li:nth-child(2) { background: #f5effd; }
+.care-highlights li:nth-child(3) { background: #fff3da; }
+.care-highlights .care-time { display: block; margin-bottom: 4px; }
+.care-highlights--benefits { margin-bottom: 0; }
+.care-highlights--benefits h3 { margin: 0 0 5px; font-size: 1.06rem; }
+.care-highlights--benefits p { margin: 0; color: var(--muted); }
+
+.care-week {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+.care-disclosure + .care-disclosure { border-top: 1px solid var(--line); }
+.care-disclosure summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 12px 17px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+.care-disclosure summary::-webkit-details-marker { display: none; }
+.care-disclosure summary::after {
+  content: "";
+  flex: none;
+  align-self: center;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px 4px auto;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+.care-disclosure[open] summary::after { transform: rotate(225deg); margin-bottom: -4px; }
+.care-disclosure summary:hover, .care-disclosure[open] summary { background: #f4f8ff; }
+.care-disclosure summary:focus-visible { outline-offset: -4px; }
+.care-weekday { flex: 0 1 7rem; color: var(--muted); }
+.care-disclosure summary strong { min-width: 0; }
+.care-full-day { overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+
+.care-time {
+  color: var(--muted);
+  font-size: .88rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+.care-timeline { list-style: none; margin: 0; padding: 2px 17px 12px; }
+.care-timeline li {
+  display: grid;
+  grid-template-columns: minmax(9rem, max-content) 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding: 8px 0;
+}
+.care-timeline li + li { border-top: 1px solid var(--line); }
+.care-age-groups, .care-meals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  margin: 0;
+  padding: 15px 17px 19px;
+}
+.care-age-groups dt, .care-meals dt { font-weight: 700; }
+.care-meals .care-time { display: block; margin: 2px 0; }
+.care-age-groups dd, .care-meals dd { margin: 3px 0 0; color: var(--muted); }
+
+@media (max-width: 700px) {
+  .care-highlights--benefits { grid-template-columns: 1fr; gap: 8px; }
+}
+@media (max-width: 500px) {
+  .care-highlights { grid-template-columns: 1fr; gap: 8px; }
+  .care-highlights li {
+    display: grid;
+    grid-template-columns: minmax(0, 6.8rem) minmax(0, 1fr);
+    align-items: baseline;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .care-highlights .care-time { margin: 0; }
+  .care-highlights--benefits li { display: block; }
+  .care-timeline li { grid-template-columns: minmax(0, 6.8rem) minmax(0, 1fr); gap: 9px; }
+  .care-age-groups, .care-meals { grid-template-columns: 1fr; gap: 10px; }
+  .care-meals dt { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0 8px; }
+}
+</style></head><body><a class="skip-link" href="#main">Перейти к основному содержанию</a><header class="island"><a class="brand" href="#home" aria-label="Mazal Way"><img class="logo" src="../assets/mazal-way-logo-v2.svg" alt="Mazal Way" width="1737" height="449"><img class="compact" src="../assets/mazal-way-mark.svg" alt="Mazal Way" width="48" height="48"></a><nav class="desktop-nav" aria-label="Открыть меню"><a href="#details">Условия</a><a href="#juliana">Владелица</a><a href="#questions">Вопросы</a></nav><div class="header-tools"><div class="contact-actions header-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D1%85%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Позвонить +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div><div class="language" aria-label="English / Español / Русский"><a href="../en/index.html" lang="en" hreflang="en" aria-label="EN – English"><span aria-hidden="true">🇺🇸</span><span>EN</span></a><a href="../es/index.html" lang="es" hreflang="es" aria-label="ES – Español"><span aria-hidden="true">🇲🇽</span><span>ES</span></a><a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="RU – Русский" aria-current="page"><span aria-hidden="true">🇷🇺</span><span>RU</span></a></div><details class="mobile-menu"><summary aria-label="Открыть меню"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary><nav><a href="#details">Условия</a><a href="#juliana">Владелица</a><a href="#questions">Вопросы</a><a href="#gallery">Игра и уют</a><a href="#location">Мы в Winnetka</a><div class="contact-actions "><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D1%85%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Позвонить +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></nav></details></div></header><main id="main" tabindex="-1"><section id="home" class="hero shell"><div class="hero-copy"><p class="eyebrow"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span>Домашний садик · Winnetka, CA</p><h1>Выбираете садик? Давайте познакомимся.</h1><p class="lead">Домашний садик в районе Winnetka, Лос-Анджелес.</p><a class="clay-button" href="#contact">Узнать о местах</a></div><div class="hero-art"><img src="../assets/hero-1120.webp" srcset="../assets/hero-640.webp 640w, ../assets/hero-1120.webp 1120w" sizes="(max-width: 760px) 92vw, 48vw" alt="" width="1120" height="1120" fetchpriority="high"></div></section><section id="details" class="shell essentials"><h2 class="essentials-title">Планируемые условия</h2><div class="facts"><div><span>Возраст</span><strong>От 2 месяцев до 12 лет</strong></div><div><span>Часы работы</span><strong>08:00–18:00</strong></div><div><span>Дни</span><strong>7 дней в неделю</strong></div><div><span>Стоимость</span><strong>Уточните актуальные условия</strong></div></div><div class="essentials-links"><a class="license-link" href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Лицензия на уход за детьми в Калифорнии № 195700853</a><a class="license-link" href="#day">Распорядок, занятия и меню</a></div></section><section id="highlights" class="shell essentials care-highlights-section" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading">Почему Mazal Way</h2>
+      <ul class="care-highlights care-highlights--benefits"><li><h3>Домашний садик</h3><p class="">Лицензированный садик в Виннетке, который ведёт Джулиана.</p></li><li><h3>Занятия по возрасту</h3><p class="">Младшие учатся через песни и игру, а старшие пробуют задания на счёт, речь и логику.</p></li><li><h3>Уход на ночь</h3><p class="">По предварительной договорённости и за отдельную плату.</p></li></ul>
+    </section><section id="gallery" class="shell section gallery">
       <div class="gallery-heading"><h2>Игра и уют</h2></div>
       <div class="media-grid"><figure class="media-item media-item--landscape">
           <button class="media-cover" type="button" data-media-kind="photo"
@@ -181,7 +300,54 @@ dialog{border:0;border-radius:23px;padding:25px;background:#fff;color:var(--ink)
             <img class="" src="../assets/video-poster-ai-v1.png" alt="Игра с кубиками" width="941" height="1672" loading="lazy" decoding="async"><span class="media-open"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></svg></span>
           </button><figcaption>Игра с кубиками</figcaption>
         </figure></div>
-    </section><section id="contact" class="shell section contact"><div><h2>Узнать о местах</h2><p class="body-large">Позвоните, чтобы обсудить расписание или договориться о визите.</p><div class="contact-actions body-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D1%85%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Позвонить +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></div><form autocomplete="off" onsubmit="return false"><fieldset disabled><div class="field"><label for="name">Ваше имя *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div><div class="field"><label for="contact-value">Email или телефон *</label><input id="contact-value" name="contact" required maxlength="254"></div><details class="more-fields"><summary>Необязательно</summary><div class="field"><label for="age">Возрастная группа ребёнка</label><select name="ageGroup" id="age"><option value="0">Обсудим при знакомстве</option><option value="1">До 1 года</option><option value="2">1–2 года</option><option value="3">3–5 лет</option><option value="4">6–12 лет</option><option value="5">Другой возраст</option></select></div><div class="field"><label for="start">Когда хотели бы начать?</label><input type="month" id="start" name="startMonth"></div><div class="field"><label for="schedule">Нужные дни или часы</label><input id="schedule" name="schedule" maxlength="300"></div><div class="field"><label for="message">Что хотите спросить?</label><textarea id="message" name="message" maxlength="2000"></textarea></div></details><button class="clay-button" type="submit" disabled>Отправить заявку</button></fieldset></form></section><section id="visit" class="visit-section"><div class="shell"><h2>Начнём со знакомства</h2><ol class="steps"><li><h3>Позвоните нам</h3></li><li><h3>Обсудим условия</h3></li><li><h3>Согласуем визит</h3></li></ol></div></section><section id="questions" class="shell section faq"><h2>Частые вопросы</h2><div class="faq-items"><details name="faq"><summary>С какого возраста принимаете детей?</summary><p>Планируем принимать детей от 2 месяцев до 12 лет. Скажите возраст ребёнка и когда хотите начать, чтобы уточнить, есть ли место.</p></details><details name="faq"><summary>Какой у садика график? Работаете в выходные?</summary><p>Планируем работать с 8:00 до 18:00 семь дней в неделю. Нужные вам дни лучше уточнить заранее.</p></details><details name="faq"><summary>Сколько стоит посещение?</summary><p>Когда будете звонить, скажите, сколько лет или месяцев ребёнку и какой график вам нужен. <a href="tel:+13044044004">Позвонить и узнать стоимость</a></p></details><details name="faq"><summary>Можно оставлять ребёнка после школы или на ночь?</summary><p>Расскажите, в какие дни и на какое время вам нужен уход после школы или на ночь. Обсудим, сможем ли помочь.</p></details><details name="faq"><summary>Можно прийти посмотреть садик?</summary><p>Позвоните, чтобы выбрать время для визита и познакомиться с Джулианой. <a href="tel:+13044044004">Позвонить в Mazal Way</a></p></details><details name="faq"><summary>Где находится садик?</summary><p>Мы в Виннетке, CA 91306. Точный адрес сообщим, когда договоримся о визите.</p></details><details name="faq"><summary>Как проверить лицензию?</summary><p>В реестре Калифорнии садик указан как TULCHINSKAIA FAMILY CHILD CARE, лицензия № 195700853. <a href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Открыть запись CDSS</a></p></details><details name="faq"><summary>Обращение бронирует место?</summary><p>Место подтверждается после оформления в садик.</p></details></div></section><section id="juliana" class="owner-section">
+    </section><section id="contact" class="shell section contact"><div><h2>Узнать о местах</h2><p class="body-large">Позвоните, чтобы обсудить расписание или договориться о визите.</p><div class="contact-actions body-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D1%85%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Позвонить +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></div><form autocomplete="off" onsubmit="return false"><fieldset disabled><div class="field"><label for="name">Ваше имя *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div><div class="field"><label for="contact-value">Email или телефон *</label><input id="contact-value" name="contact" required maxlength="254"></div><details class="more-fields"><summary>Необязательно</summary><div class="field"><label for="age">Возрастная группа ребёнка</label><select name="ageGroup" id="age"><option value="0">Обсудим при знакомстве</option><option value="1">До 1 года</option><option value="2">1–2 года</option><option value="3">3–5 лет</option><option value="4">6–12 лет</option><option value="5">Другой возраст</option></select></div><div class="field"><label for="start">Когда хотели бы начать?</label><input type="month" id="start" name="startMonth"></div><div class="field"><label for="schedule">Нужные дни или часы</label><input id="schedule" name="schedule" maxlength="300"></div><div class="field"><label for="message">Что хотите спросить?</label><textarea id="message" name="message" maxlength="2000"></textarea></div></details><button class="clay-button" type="submit" disabled>Отправить заявку</button></fieldset></form></section><section id="day" class="shell section care-section" aria-labelledby="day-heading">
+      <h2 id="day-heading">Как проходит день</h2>
+      <p class="care-intro">Пример дневного распорядка</p>
+      <ul class="care-highlights"><li><span class="care-time"><time datetime="09:00">09:00</time>–<time datetime="10:00">10:00</time></span><strong>Прогулка</strong></li><li><span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30</time></span><strong>Занятия по плану недели</strong></li><li><span class="care-time"><time datetime="13:00">13:00</time>–<time datetime="15:30">15:30</time></span><strong>Дневной сон</strong></li></ul>
+      <details class="care-disclosure care-full-day">
+        <summary>Посмотреть весь распорядок</summary>
+        <ol class="care-timeline"><li><span class="care-time"><time datetime="08:00">08:00</time>–<time datetime="08:30">08:30</time></span><span>Встречаем детей</span></li><li><span class="care-time"><time datetime="08:30">08:30</time>–<time datetime="09:00">09:00</time></span><span>Завтрак</span></li><li><span class="care-time"><time datetime="09:00">09:00</time>–<time datetime="10:00">10:00</time></span><span>Прогулка</span></li><li><span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30</time></span><span>Утренний перекус с фруктами</span></li><li><span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30</time></span><span>Занятия по плану недели</span></li><li><span class="care-time"><time datetime="11:30">11:30</time>–<time datetime="12:00">12:00</time></span><span>Играем с кубиками, цветами и формами</span></li><li><span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></span><span>Обед</span></li><li><span class="care-time"><time datetime="12:30">12:30</time>–<time datetime="13:00">13:00</time></span><span>Читаем сказку и готовимся ко сну</span></li><li><span class="care-time"><time datetime="13:00">13:00</time>–<time datetime="15:30">15:30</time></span><span>Дневной сон</span></li><li><span class="care-time"><time datetime="15:30">15:30</time>–<time datetime="16:00">16:00</time></span><span>Просыпаемся и играем в пальчиковые игры</span></li><li><span class="care-time"><time datetime="16:00">16:00</time>–<time datetime="16:30">16:30</time></span><span>Полдник</span></li><li><span class="care-time"><time datetime="16:30">16:30</time>–<time datetime="18:00">18:00</time></span><span>Прогулка, свободная игра и уход домой</span></li></ol>
+      </details>
+    </section><section id="activities" class="shell section care-section" aria-labelledby="activities-heading">
+      <h2 id="activities-heading">Занятия на неделю</h2>
+      <p class="care-intro">Пример для детей 2–5 лет · <span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30</time></span></p>
+      <div class="care-week"><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Понедельник</span><strong>ABC и развитие речи</strong></summary>
+          <dl class="care-age-groups"><div><dt>2–3 года</dt><dd>Поём ABC, ищем яблоко на картинке и говорим «apple».</dd></div><div><dt>4–5 лет</dt><dd>Знакомимся с буквой A и ищем её в слове «apple» и в именах.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Вторник</span><strong>Музыка и ритм</strong></summary>
+          <dl class="care-age-groups"><div><dt>2–3 года</dt><dd>Хлопаем под песенку и замираем, когда музыка стихает.</dd></div><div><dt>4–5 лет</dt><dd>Повторяем ритм хлопками и придумываем свой для друзей.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Среда</span><strong>Гимнастика</strong></summary>
+          <dl class="care-age-groups"><div><dt>2–3 года</dt><dd>Шагаем по дорожке и тянемся вверх, как жирафы.</dd></div><div><dt>4–5 лет</dt><dd>Проходим полосу препятствий и ловим мяч двумя руками.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Четверг</span><strong>Рисование</strong></summary>
+          <dl class="care-age-groups"><div><dt>2–3 года</dt><dd>Оставляем цветные отпечатки губкой и называем цвета.</dd></div><div><dt>4–5 лет</dt><dd>Смешиваем две краски, рисуем картину и рассказываем о ней.</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-activities">
+          <summary><span class="care-weekday">Пятница</span><strong>Счёт, формы и логика</strong></summary>
+          <dl class="care-age-groups"><div><dt>2–3 года</dt><dd>Считаем до трёх, ищем круги и сортируем кубики по цвету.</dd></div><div><dt>4–5 лет</dt><dd>Считаем предметы до десяти и продолжаем узор из двух фигур.</dd></div></dl>
+        </details></div>
+    </section><section id="menu" class="shell section care-section" aria-labelledby="menu-heading">
+      <h2 id="menu-heading">Домашнее меню</h2>
+      <p class="care-intro">Пример меню с понедельника по пятницу.</p>
+      <div class="care-week"><details class="care-disclosure" name="weekly-menu">
+          <summary>Понедельник</summary>
+          <dl class="care-meals"><div><dt>Завтрак <span class="care-time"><time datetime="08:30">08:30</time>–<time datetime="09:00">09:00</time></span></dt><dd>Творожная запеканка с яблочным пюре</dd></div><div><dt>Утренний перекус <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30</time></span></dt><dd>Мягкая груша и овсяное печенье</dd></div><div><dt>Обед <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></span></dt><dd>Борщ с говядиной и сметаной, ломтик хлеба</dd></div><div><dt>Полдник <span class="care-time"><time datetime="16:00">16:00</time>–<time datetime="16:30">16:30</time></span></dt><dd>Гречка с курицей и тушёной морковью</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Вторник</summary>
+          <dl class="care-meals"><div><dt>Завтрак <span class="care-time"><time datetime="08:30">08:30</time>–<time datetime="09:00">09:00</time></span></dt><dd>Молочная овсяная каша с бананом</dd></div><div><dt>Утренний перекус <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30</time></span></dt><dd>Натуральный йогурт с персиком</dd></div><div><dt>Обед <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></span></dt><dd>Овощной суп с цветной капустой и зеленью, хлеб</dd></div><div><dt>Полдник <span class="care-time"><time datetime="16:00">16:00</time>–<time datetime="16:30">16:30</time></span></dt><dd>Картофельное пюре с котлеткой из индейки и огурцом</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Среда</summary>
+          <dl class="care-meals"><div><dt>Завтрак <span class="care-time"><time datetime="08:30">08:30</time>–<time datetime="09:00">09:00</time></span></dt><dd>Омлет с сыром и тёплый тост</dd></div><div><dt>Утренний перекус <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30</time></span></dt><dd>Натуральный йогурт и груша</dd></div><div><dt>Обед <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></span></dt><dd>Суп с фрикадельками, мелкой вермишелью и морковью</dd></div><div><dt>Полдник <span class="care-time"><time datetime="16:00">16:00</time>–<time datetime="16:30">16:30</time></span></dt><dd>Плов с курицей и морковью</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Четверг</summary>
+          <dl class="care-meals"><div><dt>Завтрак <span class="care-time"><time datetime="08:30">08:30</time>–<time datetime="09:00">09:00</time></span></dt><dd>Рисовая каша на молоке с яблочным пюре</dd></div><div><dt>Утренний перекус <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30</time></span></dt><dd>Творог с банановым пюре</dd></div><div><dt>Обед <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></span></dt><dd>Домашний рассольник с курицей и перловкой, хлеб</dd></div><div><dt>Полдник <span class="care-time"><time datetime="16:00">16:00</time>–<time datetime="16:30">16:30</time></span></dt><dd>Куриные тефтельки с картофельным пюре и брокколи</dd></div></dl>
+        </details><details class="care-disclosure" name="weekly-menu">
+          <summary>Пятница</summary>
+          <dl class="care-meals"><div><dt>Завтрак <span class="care-time"><time datetime="08:30">08:30</time>–<time datetime="09:00">09:00</time></span></dt><dd>Овсяные хлопья без сахара с молоком и бананом</dd></div><div><dt>Утренний перекус <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30</time></span></dt><dd>Творог с яблочным пюре</dd></div><div><dt>Обед <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30</time></span></dt><dd>Куриный суп с лапшой и укропом</dd></div><div><dt>Полдник <span class="care-time"><time datetime="16:00">16:00</time>–<time datetime="16:30">16:30</time></span></dt><dd>Макароны по-флотски с говядиной и салат из огурца и помидора</dd></div></dl>
+        </details></div>
+      <p class="care-note">Если у ребёнка есть аллергия или ограничения в питании, расскажите об этом до начала посещения.</p>
+    </section><section id="visit" class="visit-section"><div class="shell"><h2>Начнём со знакомства</h2><ol class="steps"><li><h3>Позвоните нам</h3></li><li><h3>Обсудим условия</h3></li><li><h3>Согласуем визит</h3></li></ol></div></section><section id="questions" class="shell section faq"><h2>Частые вопросы</h2><div class="faq-items"><details name="faq"><summary>С какого возраста принимаете детей?</summary><p>Планируем принимать детей от 2 месяцев до 12 лет. Скажите возраст ребёнка и когда хотите начать, чтобы уточнить, есть ли место.</p></details><details name="faq"><summary>Какой у садика график? Работаете в выходные?</summary><p>Планируем работать с 8:00 до 18:00 семь дней в неделю. Нужные вам дни лучше уточнить заранее.</p></details><details name="faq"><summary>Сколько стоит посещение?</summary><p>Когда будете звонить, скажите, сколько лет или месяцев ребёнку и какой график вам нужен. <a href="tel:+13044044004">Позвонить и узнать стоимость</a></p></details><details name="faq"><summary>Можно оставить ребёнка на ночь?</summary><p>Ночной уход согласовываем заранее, стоимость рассчитывается отдельно. Позвоните и скажите, на какую дату и время вам нужен уход. <a href="tel:+13044044004">Уточнить условия ночного ухода</a></p></details><details name="faq"><summary>Можно приводить ребёнка после школы?</summary><p>Скажите, какие дни и часы вам нужны после школы. Обсудим, сможем ли помочь.</p></details><details name="faq"><summary>Чем дети занимаются в течение дня?</summary><p>Есть время для прогулок, занятий по возрасту, еды и дневного сна. На сайте можно посмотреть пример дня, занятия и меню. <a href="#day">Посмотреть распорядок</a></p></details><details name="faq"><summary>Можно прийти посмотреть садик?</summary><p>Позвоните, чтобы выбрать время для визита и познакомиться с Джулианой. <a href="tel:+13044044004">Позвонить в Mazal Way</a></p></details><details name="faq"><summary>Где находится садик?</summary><p>Мы в Виннетке, CA 91306. Точный адрес сообщим, когда договоримся о визите.</p></details><details name="faq"><summary>Как проверить лицензию?</summary><p>В реестре Калифорнии садик указан как TULCHINSKAIA FAMILY CHILD CARE, лицензия № 195700853. <a href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Открыть запись CDSS</a></p></details><details name="faq"><summary>Обращение бронирует место?</summary><p>Место подтверждается после оформления в садик.</p></details></div></section><section id="juliana" class="owner-section">
       <div class="shell owner-grid">
         <figure class="owner-portrait"><img class="" src="../assets/juliana-portrait-800.webp" srcset="../assets/juliana-portrait-480.webp 480w, ../assets/juliana-portrait-800.webp 800w" sizes="(max-width: 380px) calc(100vw - 36px), 365px" alt="Джулиана, основательница Mazal Way" width="800" height="1168" loading="lazy" decoding="async"></figure>
         <div class="owner-story">
