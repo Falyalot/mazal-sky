@@ -282,52 +282,275 @@ dialog{border:0;border-radius:23px;padding:25px;background:#fff;color:var(--ink)
   .care-age-groups, .care-meals { grid-template-columns: 1fr; gap: 10px; }
   .care-meals dt { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0 8px; }
 }
-</style></head><body><a class="skip-link" href="#main">Saltar al contenido principal</a><header class="island"><a class="brand" href="#home" aria-label="Mazal Way"><img class="logo" src="../assets/mazal-way-logo-v2.svg" alt="Mazal Way" width="1737" height="449"><img class="compact" src="../assets/mazal-way-mark.svg" alt="Mazal Way" width="48" height="48"></a><nav class="desktop-nav" aria-label="Abrir menú"><a href="#details">Opciones de cuidado</a><a href="#juliana">La propietaria</a><a href="#questions">Preguntas</a></nav><div class="header-tools"><div class="contact-actions header-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div><div class="language" aria-label="English / Español / Русский"><a href="../en/index.html" lang="en" hreflang="en" aria-label="EN – English"><span aria-hidden="true">🇺🇸</span><span>EN</span></a><a href="../es/index.html" lang="es" hreflang="es" aria-label="ES – Español" aria-current="page"><span aria-hidden="true">🇲🇽</span><span>ES</span></a><a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="RU – Русский"><span aria-hidden="true">🇷🇺</span><span>RU</span></a></div><details class="mobile-menu"><summary aria-label="Abrir menú"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary><nav><a href="#details">Opciones de cuidado</a><a href="#juliana">La propietaria</a><a href="#questions">Preguntas</a><a href="#gallery">Jugar y explorar</a><a href="#location">Estamos en Winnetka</a><div class="contact-actions "><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></nav></details></div></header><main id="main" tabindex="-1"><section id="home" class="hero shell"><div class="hero-copy"><p class="eyebrow"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span>Guardería en casa · Winnetka, CA</p><h1>¿Buscas cuidado infantil? Conozcámonos.</h1><p class="lead">Una guardería en casa en Winnetka, Los Ángeles.</p><a class="clay-button" href="#contact">Consultar disponibilidad</a></div><div class="hero-art"><img src="../assets/hero-1120.webp" srcset="../assets/hero-640.webp 640w, ../assets/hero-1120.webp 1120w" sizes="(max-width: 760px) 92vw, 48vw" alt="" width="1120" height="1120" fetchpriority="high"></div></section><section id="details" class="shell essentials"><h2 class="essentials-title">Condiciones previstas</h2><div class="facts"><div><span>Edades</span><strong>De 2 meses a 12 años</strong></div><div><span>Horario</span><strong>De 8 a. m. a 6 p. m.</strong></div><div><span>Días</span><strong>Los 7 días de la semana</strong></div><div><span>Costo</span><strong>Consulta las tarifas actuales</strong></div></div><div class="essentials-links"><a class="license-link" href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Licencia de cuidado infantil de California n.º 195700853</a><a class="license-link" href="#day">Rutina, actividades y menú</a></div></section><section id="highlights" class="shell essentials care-highlights-section" aria-labelledby="highlights-heading">
-      <h2 id="highlights-heading">Lo que distingue a Mazal Way</h2>
-      <ul class="care-highlights care-highlights--benefits"><li><h3>Una guardería en casa</h3><p class="">Juliana dirige esta guardería con licencia en Winnetka.</p></li><li><h3>Actividades según la edad</h3><p class="">Los más pequeños aprenden con canciones y juegos. Los mayores prueban patrones, cuentan historias y más.</p></li><li><h3>Cuidado nocturno</h3><p class="">Se coordina con anticipación y tiene un costo aparte.</p></li></ul>
-    </section><section id="gallery" class="shell section gallery">
-      <div class="gallery-heading"><h2>Jugar y explorar</h2></div>
-      <div class="media-grid"><figure class="media-item media-item--landscape">
+
+/* Section rhythm and navigation */
+.band--white { background: #fff; }
+.band--blue { background: #e9f4fe; }
+.band--cream { background: #fff8ed; }
+.band:has(> #day), .band:has(> #menu), .band:has(> #contact) { border-top: 1px solid #d9e4ef; }
+.island { background: #fffffff5; }
+.island.is-scrolled { background: #ffffffd9; }
+.header-contacts .contact-action.whatsapp { background: #e4f5ed; border-color: #aed5c3; }
+.header-contacts .contact-action.whatsapp:hover { background: #d5efe2; border-color: #76a995; }
+
+.hero-location {
+  display: inline-flex;
+  min-height: 44px;
+  text-decoration: none;
+  border-radius: 24px;
+  padding-right: 12px;
+}
+.hero-location .ui-icon { width: 16px; height: 16px; }
+.hero-location:hover .ui-icon { transform: translateY(3px); }
+.hero-location:hover { color: var(--ink); }
+@keyframes welcome-glow {
+  from { opacity: .65; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-art::before { animation: welcome-glow 700ms ease-out both; }
+  .hero-location .ui-icon { transition: transform 160ms ease; }
+}
+#details { padding-bottom: clamp(28px, 4vw, 48px); }
+.facts strong a { color: var(--ink); text-decoration-color: #6882ab; text-underline-offset: 4px; }
+.facts strong a:hover { color: var(--blue); }
+
+/* Photos and video are one swipeable strip */
+.gallery { padding-block: clamp(36px, 6vw, 72px) clamp(24px, 4vw, 44px); }
+.gallery-controls:not([hidden]) { display: flex; gap: 8px; }
+.gallery-controls button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #b5c7dc;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+}
+.gallery-controls button:disabled { opacity: .45; }
+.media-grid {
+  display: flex;
+  max-width: none;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #9cb6d4 transparent;
+  padding: 5px 5px 10px;
+}
+.media-item { flex: 0 0 calc(42% - 8px); min-width: 0; scroll-snap-align: start; }
+.media-item:first-child { flex-basis: calc(58% - 8px); }
+.gallery .media-cover { height: clamp(270px, 36vw, 462px); aspect-ratio: auto; }
+.gallery .media-cover::after { display: none; }
+.gallery .media-open,
+.gallery .media-item--portrait .media-open { inset: 14px 14px auto auto; width: 44px; height: 44px; }
+.media-cover:focus-visible { outline-offset: -4px; }
+
+#highlights { padding-block: clamp(20px, 4vw, 46px) clamp(42px, 6vw, 78px); }
+.care-highlights--benefits { gap: 16px; }
+.care-highlights--benefits li { padding: clamp(17px, 2.7vw, 28px); border-radius: 21px; }
+.care-highlights--benefits li:first-child { background: #eef6fd; }
+.care-highlights--benefits h3 a { text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.care-highlights--benefits h3 .ui-icon { width: 15px; height: 15px; margin-left: 5px; vertical-align: -2px; }
+
+/* A full daily timeline, then a compact weekday picker */
+.care-full-day { border-radius: 24px; }
+.care-timeline {
+  position: relative;
+  padding: 11px 23px 11px 42px;
+}
+.care-timeline::before, .care-timeline::after {
+  content: "";
+  position: absolute;
+  inset: 24px auto 24px 23px;
+  width: 3px;
+  border-radius: 3px;
+  background: #ccb7ef;
+  pointer-events: none;
+}
+.care-timeline::after { display: none; }
+.care-timeline li { position: relative; padding-block: 11px; }
+.care-timeline li::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: -23px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ad91dc;
+  box-shadow: inset 0 1px 1px #ffffff9c;
+}
+.care-timeline li:nth-child(5)::before, .care-timeline li:nth-child(9)::before { background: #9857c3; }
+#day { padding-bottom: 20px; }
+#day > .text-link { display: inline-block; padding-block: 10px; margin-top: 5px; }
+#activities { padding-top: 22px; }
+@keyframes timeline-fill { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@media (prefers-reduced-motion: no-preference) {
+  @supports ((animation-timeline: view()) and (animation-range: entry)) {
+    .care-timeline::after {
+      display: block;
+      background: #8453b4;
+      transform-origin: top;
+      animation: timeline-fill linear both;
+      animation-timeline: view();
+      animation-range: entry 15% exit 80%;
+    }
+  }
+}
+.activity-picker { border: 1px solid var(--line); border-radius: 22px; background: #fff; }
+.activity-select:not([hidden]) {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 12px 12px 0;
+}
+.day-choice { position: relative; display: grid; }
+.day-choice input { position: absolute; opacity: 0; width: 1px; height: 1px; min-height: 0; }
+.day-choice span {
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  border-radius: 11px;
+  border: 1px solid transparent;
+  background: #eef5fd;
+  font-weight: 700;
+  cursor: pointer;
+}
+.day-choice input:checked + span { color: #fff; background: #284580; }
+.day-choice input:focus-visible + span { outline: 3px solid var(--blue); outline-offset: 2px; }
+.activity-panel { padding: 16px 17px 20px; }
+.activity-panel h3, .activity-weekday { margin: 0; }
+.activity-weekday { color: var(--muted); font-size: .9rem; }
+.activity-select:not([hidden]) + .activity-panels .activity-weekday { display: none; }
+.activity-panel .care-age-groups { padding: 9px 0 0; }
+#menu .care-week { border-color: #e4d8be; }
+#menu .care-disclosure[open] summary { background: #fff0d6; }
+
+/* Enquiry and footer */
+.contact { align-items: center; border-top: 0; }
+.contact-copy .body-large { margin-bottom: 14px; }
+.contact-copy .body-contacts { margin: 18px 0 0; }
+.contact-art {
+  display: grid;
+  place-items: center;
+  width: 144px;
+  aspect-ratio: 1;
+  margin-top: 25px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 42% 38%, #fff3c2 0%, #ffedb278 48%, transparent 72%);
+}
+.contact-art .location-pin { width: 51px; height: 61px; transform: rotate(-10deg); }
+.footer-main { padding-block: 54px 26px; min-height: 0; align-items: center; }
+.footer-main > div:first-child > img { margin-bottom: 17px; }
+.footer-main .footer-contact { padding: 0; }
+.footer-location { display: inline-flex; align-items: center; text-decoration: none; }
+.footer-main .footer-license {
+  display: inline-block;
+  width: fit-content;
+  font-size: clamp(1.04rem, 2vw, 1.28rem);
+  line-height: 1.3;
+  font-weight: 650;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.footer-actions :is(.whatsapp,.mail,.instagram) { min-width: 46px; padding-inline: 10px; }
+.footer-actions :is(.whatsapp,.mail,.instagram) span { display: none; }
+.footer-actions button:disabled { background: #ffffff16; color: #e3ebfa; border-color: #ffffff59; }
+
+@media (max-width: 850px) {
+  .gallery .media-item, .gallery .media-item:first-child { flex-basis: 84%; }
+  .gallery .media-cover { height: clamp(205px, 52vw, 360px); }
+  .contact-art { display: none; }
+  .footer-main { padding-block: 38px 14px; gap: 21px; }
+}
+@media (max-width: 500px) {
+  .gallery-heading { gap: 8px; margin-bottom: 14px; }
+  .gallery-heading h2 { font-size: clamp(1.4rem, 6.8vw, 1.85rem); }
+  .gallery-controls button { width: 40px; height: 40px; }
+  .care-timeline { padding-inline: 28px 10px; }
+  .care-timeline::before, .care-timeline::after { left: 13px; }
+  .care-timeline li::before { left: -18px; }
+  .care-timeline li { grid-template-columns: minmax(0, 7rem) minmax(0, 1fr); }
+}
+</style></head><body><a class="skip-link" href="#main">Saltar al contenido principal</a><header class="island"><a class="brand" href="#home" aria-label="Mazal Way"><img class="logo" src="../assets/mazal-way-logo-v2.svg" alt="Mazal Way" width="1737" height="449"><img class="compact" src="../assets/mazal-way-mark.svg" alt="Mazal Way" width="48" height="48"></a><nav class="desktop-nav" aria-label="Abrir menú"><a href="#gallery">Fotos</a><a href="#day">Horario</a><a href="#questions">Preguntas</a><a href="#contact">Contacto</a></nav><div class="header-tools"><div class="contact-actions header-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div><div class="language" aria-label="English / Español / Русский"><a href="../en/index.html" lang="en" hreflang="en" aria-label="EN – English"><span aria-hidden="true">🇺🇸</span><span>EN</span></a><a href="../es/index.html" lang="es" hreflang="es" aria-label="ES – Español" aria-current="page"><span aria-hidden="true">🇲🇽</span><span>ES</span></a><a href="../ru/index.html" lang="ru" hreflang="ru" aria-label="RU – Русский"><span aria-hidden="true">🇷🇺</span><span>RU</span></a></div><details class="mobile-menu"><summary aria-label="Abrir menú"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary><nav><a href="#gallery">Fotos</a><a href="#day">Horario</a><a href="#questions">Preguntas</a><a href="#contact">Contacto</a><a href="#juliana">Conoce a Juliana</a><a href="#location">Ubicación</a><div class="contact-actions "><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></nav></details></div></header><main id="main" tabindex="-1"><section id="home" class="hero shell"><div class="hero-copy"><a class="eyebrow hero-location" href="#location"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span><span>Winnetka, Los Ángeles</span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a><h1>¿Buscas cuidado infantil? Conozcámonos.</h1><p class="lead">Una guardería en casa en Winnetka, Los Ángeles.</p><a class="clay-button" href="#contact">Consultar disponibilidad</a></div><div class="hero-art"><img src="../assets/hero-1120.webp" srcset="../assets/hero-640.webp 640w, ../assets/hero-1120.webp 1120w" sizes="(max-width: 760px) 92vw, 48vw" alt="" width="1120" height="1120" fetchpriority="high"></div></section><section id="details" class="shell essentials" aria-label="Condiciones previstas"><div class="facts"><div><span>Edades previstas</span><strong>De 2 meses a 12 años</strong></div><div><span>Horario previsto</span><strong>8 a. m.–6 p. m.</strong></div><div><span>Días</span><strong><a href="#contact">Consultar días</a></strong></div><div><span>Comidas</span><strong><a href="#menu">Ver el menú</a></strong></div></div></section><div class="band band--white"><section id="gallery" class="shell section gallery" aria-labelledby="gallery-heading">
+      <div class="gallery-heading"><h2 id="gallery-heading">Un vistazo a la guardería</h2>
+        <div class="gallery-controls" hidden>
+          <button type="button" data-gallery-step="-1" aria-controls="gallery-track" aria-label="Foto o video anterior"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
+          <button type="button" data-gallery-step="1" aria-controls="gallery-track" aria-label="Siguiente foto o video"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <div class="media-grid" id="gallery-track"><figure class="media-item media-item--landscape">
           <button class="media-cover" type="button" data-media-kind="photo"
-            data-media-src="../assets/room-ai-v1.png" data-video-src="" data-caption="Un rincón de juegos"
+            data-media-src="../assets/room-ai-v1.webp" data-video-src="" data-caption="Un rincón de juegos"
             aria-label="Ver imagen · Un rincón de juegos">
-            <img class="" src="../assets/room-ai-v1.png" alt="Un rincón de juegos" width="1448" height="1086" loading="lazy" decoding="async"><span class="media-open"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></svg></span>
-          </button><figcaption>Un rincón de juegos</figcaption>
+            <img class="" src="../assets/room-ai-v1.webp" alt="Un rincón de juegos" width="1200" height="900" loading="lazy" decoding="async"><span class="media-open"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></svg></span>
+          </button>
         </figure><figure class="media-item media-item--portrait">
           <button class="media-cover" type="button" data-media-kind="photo"
-            data-media-src="../assets/video-poster-ai-v1.png" data-video-src="" data-caption="Apilar bloques"
+            data-media-src="../assets/video-poster-ai-v1.webp" data-video-src="" data-caption="Apilar bloques"
             aria-label="Ver imagen · Apilar bloques">
-            <img class="" src="../assets/video-poster-ai-v1.png" alt="Apilar bloques" width="941" height="1672" loading="lazy" decoding="async"><span class="media-open"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></svg></span>
-          </button><figcaption>Apilar bloques</figcaption>
+            <img class="" src="../assets/video-poster-ai-v1.webp" alt="Apilar bloques" width="760" height="1351" loading="lazy" decoding="async"><span class="media-open"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></svg></span>
+          </button>
         </figure></div>
-    </section><section id="contact" class="shell section contact"><div><h2>Consultar disponibilidad</h2><p class="body-large">Llámanos para hablar del horario que necesitas o coordinar una visita.</p><div class="contact-actions body-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></div><form autocomplete="off" onsubmit="return false"><fieldset disabled><div class="field"><label for="name">Tu nombre *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div><div class="field"><label for="contact-value">Correo electrónico o teléfono *</label><input id="contact-value" name="contact" required maxlength="254"></div><details class="more-fields"><summary>Opcional</summary><div class="field"><label for="age">Edad de tu hijo</label><select name="ageGroup" id="age"><option value="0">Prefiero conversarlo</option><option value="1">Menos de 1 año</option><option value="2">1–2 años</option><option value="3">3–5 años</option><option value="4">6–12 años</option><option value="5">Otra edad</option></select></div><div class="field"><label for="start">¿Cuándo te gustaría empezar?</label><input type="month" id="start" name="startMonth"></div><div class="field"><label for="schedule">Días u horario que necesitas</label><input id="schedule" name="schedule" maxlength="300"></div><div class="field"><label for="message">¿Qué te gustaría preguntar?</label><textarea id="message" name="message" maxlength="2000"></textarea></div></details><button class="clay-button" type="submit" disabled>Enviar consulta</button></fieldset></form></section><section id="day" class="shell section care-section" aria-labelledby="day-heading">
+    </section></div><div class="band band--white"><section id="highlights" class="shell essentials care-highlights-section" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading">Espacio para jugar, tiempo para descansar</h2>
+      <ul class="care-highlights care-highlights--benefits"><li><h3><a href="#juliana">Una guardería en casa<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></h3><p class="">Juliana dirige esta guardería con licencia en Winnetka.</p></li><li><h3><a href="#activities">Actividades según la edad<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></h3><p class="">Mira qué pueden hacer esta semana los niños de 2 a 3 y de 4 a 5 años.</p></li><li><h3><a href="#day">Una rutina para cada día<svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></h3><p class="">Juego al aire libre, comidas y un cuento antes de la siesta.</p></li></ul>
+    </section></div><div class="band band--blue"><section id="day" class="shell section care-section" aria-labelledby="day-heading">
       <h2 id="day-heading">Un día en Mazal Way</h2>
       <p class="care-intro">Ejemplo de la rutina durante el día</p>
-      <ul class="care-highlights"><li><span class="care-time"><time datetime="09:00">9:00</time>–<time datetime="10:00">10:00 a. m.</time></span><strong>Juego al aire libre</strong></li><li><span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30 a. m.</time></span><strong>Actividades del plan semanal</strong></li><li><span class="care-time"><time datetime="13:00">1:00</time>–<time datetime="15:30">3:30 p. m.</time></span><strong>Siesta</strong></li></ul>
-      <details class="care-disclosure care-full-day">
-        <summary>Ver el horario completo</summary>
+      <div class="care-full-day">
         <ol class="care-timeline"><li><span class="care-time"><time datetime="08:00">8:00</time>–<time datetime="08:30">8:30 a. m.</time></span><span>Llegada</span></li><li><span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a. m.</time></span><span>Desayuno</span></li><li><span class="care-time"><time datetime="09:00">9:00</time>–<time datetime="10:00">10:00 a. m.</time></span><span>Juego al aire libre</span></li><li><span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a. m.</time></span><span>Refrigerio de la mañana con fruta</span></li><li><span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30 a. m.</time></span><span>Actividades del plan semanal</span></li><li><span class="care-time"><time datetime="11:30">11:30 a. m.</time>–<time datetime="12:00">12:00 p. m.</time></span><span>Jugamos con bloques, colores y formas</span></li><li><span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p. m.</time></span><span>Comida</span></li><li><span class="care-time"><time datetime="12:30">12:30</time>–<time datetime="13:00">1:00 p. m.</time></span><span>Leemos un cuento y nos preparamos para descansar</span></li><li><span class="care-time"><time datetime="13:00">1:00</time>–<time datetime="15:30">3:30 p. m.</time></span><span>Siesta</span></li><li><span class="care-time"><time datetime="15:30">3:30</time>–<time datetime="16:00">4:00 p. m.</time></span><span>Nos despertamos y hacemos juegos con las manos</span></li><li><span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p. m.</time></span><span>Merienda</span></li><li><span class="care-time"><time datetime="16:30">4:30</time>–<time datetime="18:00">6:00 p. m.</time></span><span>Tiempo al aire libre, juego libre y salida</span></li></ol>
-      </details>
-    </section><section id="activities" class="shell section care-section" aria-labelledby="activities-heading">
-      <h2 id="activities-heading">Actividades de la semana</h2>
+      </div>
+      <a class="text-link" href="#activities">Ver actividades por día</a>
+    </section></div><div class="band band--blue"><section id="activities" class="shell section care-section" aria-labelledby="activities-heading">
+      <h2 id="activities-heading">Actividades por día</h2>
       <p class="care-intro">Ejemplo para niños de 2 a 5 años · <span class="care-time"><time datetime="10:30">10:30</time>–<time datetime="11:30">11:30 a. m.</time></span></p>
-      <div class="care-week"><details class="care-disclosure" name="weekly-activities">
-          <summary><span class="care-weekday">Lunes</span><strong>El abecedario y el lenguaje</strong></summary>
+      <div class="activity-picker">
+        <fieldset class="activity-select" hidden><legend class="sr-only">Elige un día para ver las actividades</legend><label class="day-choice">
+          <input type="radio" name="activity-day" value="mon" aria-label="Lunes" checked>
+          <span aria-hidden="true">Lun</span>
+        </label><label class="day-choice">
+          <input type="radio" name="activity-day" value="tue" aria-label="Martes">
+          <span aria-hidden="true">Mar</span>
+        </label><label class="day-choice">
+          <input type="radio" name="activity-day" value="wed" aria-label="Miércoles">
+          <span aria-hidden="true">Mié</span>
+        </label><label class="day-choice">
+          <input type="radio" name="activity-day" value="thu" aria-label="Jueves">
+          <span aria-hidden="true">Jue</span>
+        </label><label class="day-choice">
+          <input type="radio" name="activity-day" value="fri" aria-label="Viernes">
+          <span aria-hidden="true">Vie</span>
+        </label></fieldset>
+        <div class="activity-panels"><article class="activity-panel" data-day="mon">
+          <p class="activity-weekday">Lunes</p>
+          <h3>El abecedario y el lenguaje</h3>
           <dl class="care-age-groups"><div><dt>De 2 a 3 años</dt><dd>Cantamos el abecedario, buscamos la manzana en un dibujo y decimos “apple”.</dd></div><div><dt>De 4 a 5 años</dt><dd>Conocemos la letra A y la buscamos en “apple” y en los nombres.</dd></div></dl>
-        </details><details class="care-disclosure" name="weekly-activities">
-          <summary><span class="care-weekday">Martes</span><strong>Música y ritmo</strong></summary>
+        </article><article class="activity-panel" data-day="tue">
+          <p class="activity-weekday">Martes</p>
+          <h3>Música y ritmo</h3>
           <dl class="care-age-groups"><div><dt>De 2 a 3 años</dt><dd>Aplaudimos al ritmo de una canción y nos quedamos quietos cuando para.</dd></div><div><dt>De 4 a 5 años</dt><dd>Repetimos un ritmo con palmadas e inventamos otro para los amigos.</dd></div></dl>
-        </details><details class="care-disclosure" name="weekly-activities">
-          <summary><span class="care-weekday">Miércoles</span><strong>Movimiento</strong></summary>
+        </article><article class="activity-panel" data-day="wed">
+          <p class="activity-weekday">Miércoles</p>
+          <h3>Movimiento</h3>
           <dl class="care-age-groups"><div><dt>De 2 a 3 años</dt><dd>Caminamos por un sendero y nos estiramos como jirafas.</dd></div><div><dt>De 4 a 5 años</dt><dd>Recorremos un circuito de obstáculos y atrapamos una pelota con las dos manos.</dd></div></dl>
-        </details><details class="care-disclosure" name="weekly-activities">
-          <summary><span class="care-weekday">Jueves</span><strong>Pintura</strong></summary>
+        </article><article class="activity-panel" data-day="thu">
+          <p class="activity-weekday">Jueves</p>
+          <h3>Pintura</h3>
           <dl class="care-age-groups"><div><dt>De 2 a 3 años</dt><dd>Hacemos estampas con esponjas y nombramos los colores.</dd></div><div><dt>De 4 a 5 años</dt><dd>Mezclamos dos colores, pintamos un dibujo y contamos qué hicimos.</dd></div></dl>
-        </details><details class="care-disclosure" name="weekly-activities">
-          <summary><span class="care-weekday">Viernes</span><strong>Números, figuras y patrones</strong></summary>
+        </article><article class="activity-panel" data-day="fri">
+          <p class="activity-weekday">Viernes</p>
+          <h3>Números, figuras y patrones</h3>
           <dl class="care-age-groups"><div><dt>De 2 a 3 años</dt><dd>Contamos hasta tres, buscamos círculos y agrupamos bloques por color.</dd></div><div><dt>De 4 a 5 años</dt><dd>Contamos hasta diez objetos y completamos un patrón de dos figuras.</dd></div></dl>
-        </details></div>
-    </section><section id="menu" class="shell section care-section" aria-labelledby="menu-heading">
+        </article></div>
+      </div>
+    </section></div><div class="band band--cream"><section id="menu" class="shell section care-section" aria-labelledby="menu-heading">
       <h2 id="menu-heading">Menú casero</h2>
       <p class="care-intro">Ejemplo de menú de lunes a viernes.</p>
       <div class="care-week"><details class="care-disclosure" name="weekly-menu">
@@ -347,7 +570,7 @@ dialog{border:0;border-radius:23px;padding:25px;background:#fff;color:var(--ink)
           <dl class="care-meals"><div><dt>Desayuno <span class="care-time"><time datetime="08:30">8:30</time>–<time datetime="09:00">9:00 a. m.</time></span></dt><dd>Hojuelas de avena sin azúcar con leche y plátano</dd></div><div><dt>Refrigerio de la mañana <span class="care-time"><time datetime="10:00">10:00</time>–<time datetime="10:30">10:30 a. m.</time></span></dt><dd>Requesón con puré de manzana</dd></div><div><dt>Comida <span class="care-time"><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 p. m.</time></span></dt><dd>Sopa de pollo con fideos y eneldo</dd></div><div><dt>Merienda <span class="care-time"><time datetime="16:00">4:00</time>–<time datetime="16:30">4:30 p. m.</time></span></dt><dd>Pasta con carne molida de res y ensalada de pepino y jitomate</dd></div></dl>
         </details></div>
       <p class="care-note">Avísanos si tu hijo tiene alergias o restricciones de comida antes de que empiece a venir.</p>
-    </section><section id="visit" class="visit-section"><div class="shell"><h2>Empecemos por conocernos.</h2><ol class="steps"><li><h3>Llámanos</h3></li><li><h3>Hablemos de tus necesidades</h3></li><li><h3>Acordemos una visita</h3></li></ol></div></section><section id="questions" class="shell section faq"><h2>Preguntas frecuentes</h2><div class="faq-items"><details name="faq"><summary>¿Qué edades reciben?</summary><p>Planeamos recibir a niños de 2 meses a 12 años. Para consultar si hay lugar, cuéntanos qué edad tiene tu hijo y cuándo necesitarías cuidado.</p></details><details name="faq"><summary>¿Cuál es el horario? ¿Abren los fines de semana?</summary><p>El horario previsto es de 8 a. m. a 6 p. m., los siete días de la semana. Consulta con nosotros los días que necesitas.</p></details><details name="faq"><summary>¿Cuánto cuesta la guardería?</summary><p>Cuando nos llames, cuéntanos qué edad tiene tu hijo y qué días y horarios necesitas. <a href="tel:+13044044004">Llamar para consultar el precio</a></p></details><details name="faq"><summary>¿Mi hijo puede quedarse a dormir?</summary><p>El cuidado nocturno se coordina con anticipación y tiene un costo aparte. Llámanos con la fecha y el horario que necesitas. <a href="tel:+13044044004">Consultar por cuidado nocturno</a></p></details><details name="faq"><summary>¿Mi hijo puede ir después de la escuela?</summary><p>Cuéntanos qué días y horarios necesitas después de la escuela para ver qué opciones hay.</p></details><details name="faq"><summary>¿Qué hacen los niños durante el día?</summary><p>Hay tiempo para jugar al aire libre, hacer actividades según la edad, comer y tomar la siesta. Puedes ver un día de ejemplo, las actividades de la semana y el menú. <a href="#day">Ver la rutina diaria</a></p></details><details name="faq"><summary>¿Puedo conocer la guardería?</summary><p>Llámanos para acordar una visita y conocer a Juliana. <a href="tel:+13044044004">Llamar a Mazal Way</a></p></details><details name="faq"><summary>¿Dónde está la guardería?</summary><p>Estamos en Winnetka, CA 91306. Te damos la dirección cuando coordinemos tu visita.</p></details><details name="faq"><summary>¿Cómo puedo consultar la licencia?</summary><p>Busca TULCHINSKAIA FAMILY CHILD CARE, licencia n.º 195700853, en el registro de cuidado infantil de California. <a href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Ver el registro de CDSS</a></p></details><details name="faq"><summary>¿Se aparta un lugar al ponerme en contacto?</summary><p>El lugar se confirma cuando se completa la inscripción.</p></details></div></section><section id="juliana" class="owner-section">
+    </section></div><div class="band band--blue"><section id="contact" class="shell section contact"><div class="contact-copy"><h2>Consulta si hay cupo</h2><p class="body-large">Cuéntanos la edad de tu hijo y qué días necesitas. Podemos hablar sobre el cupo y coordinar una visita.</p><div class="contact-actions body-contacts"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div><div class="contact-art" aria-hidden="true"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span></div></div><form autocomplete="off" onsubmit="return false"><fieldset disabled><div class="field"><label for="name">Tu nombre *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div><div class="field"><label for="contact-value">Correo electrónico o teléfono *</label><input id="contact-value" name="contact" required maxlength="254"></div><details class="more-fields"><summary>Opcional</summary><div class="field"><label for="age">Edad de tu hijo</label><select name="ageGroup" id="age"><option value="0">Prefiero conversarlo</option><option value="1">Menos de 1 año</option><option value="2">1–2 años</option><option value="3">3–5 años</option><option value="4">6–12 años</option><option value="5">Otra edad</option></select></div><div class="field"><label for="start">¿Cuándo te gustaría empezar?</label><input type="month" id="start" name="startMonth"></div><div class="field"><label for="schedule">Días u horario que necesitas</label><input id="schedule" name="schedule" maxlength="300"></div><div class="field"><label for="message">¿Qué te gustaría preguntar?</label><textarea id="message" name="message" maxlength="2000"></textarea></div></details><button class="clay-button" type="submit" disabled>Enviar consulta</button></fieldset></form></section></div><section id="juliana" class="owner-section">
       <div class="shell owner-grid">
         <figure class="owner-portrait"><img class="" src="../assets/juliana-portrait-800.webp" srcset="../assets/juliana-portrait-480.webp 480w, ../assets/juliana-portrait-800.webp 800w" sizes="(max-width: 380px) calc(100vw - 36px), 365px" alt="Juliana, fundadora de Mazal Way" width="800" height="1168" loading="lazy" decoding="async"></figure>
         <div class="owner-story">
@@ -357,7 +580,10 @@ dialog{border:0;border-radius:23px;padding:25px;background:#fff;color:var(--ink)
           <a class="text-link" href="tel:+13044044004">Coordinar una visita por teléfono</a>
         </div>
       </div>
-    </section><section id="location" class="shell section location-section"><div><div class="location-emblem"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span></div><h2>Estamos en Winnetka</h2><p class="">Los Angeles, CA 91306. Te daremos la dirección al acordar la visita.</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Winnetka%2C%20CA%2091306" target="_blank" rel="noopener noreferrer">Abrir Google Maps</a></div><div class="map-frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26396.46119127919!2d-118.5756455!3d34.208777000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29bf24cbf42e3%3A0x1d11324abb450e3a!2sWinnetka%2C%20CA%2091306!5e0!3m2!1sen!2sus!4v1795579333762!5m2!1sen!2sus" title="Mapa de Winnetka, CA 91306" width="600" height="450" style="border:0" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></section></main><footer class="footer-wrap"><div class="shell footer-main"><div><img src="../assets/mazal-way-logo-white-v2.svg" width="1737" height="449" alt="Mazal Way"><h2>Conozcámonos.</h2><a class="clay-button" href="#contact">Consultar disponibilidad</a></div><div class="footer-contact"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span><strong>Winnetka, CA 91306</strong><div class="contact-actions footer-actions"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a></div></div><div class="footer-bottom"><span>© 2026 Mazal Way. Todos los derechos reservados.</span><a class="footer-license" href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Licencia de cuidado infantil de California n.º 195700853</a></div></div></footer><dialog id="media-dialog" aria-labelledby="media-title"><button type="button" class="dialog-close" aria-label="Cerrar"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button><h2 id="media-title"></h2><div id="media-content"></div></dialog><script>'use strict';
+    </section><div class="band band--cream"><section id="questions" class="shell section faq"><h2>Preguntas frecuentes</h2><div class="faq-items"><details name="faq"><summary>¿Qué edades reciben?</summary><p>Planeamos recibir a niños de 2 meses a 12 años. Para consultar si hay lugar, cuéntanos qué edad tiene tu hijo y cuándo necesitarías cuidado.</p></details><details name="faq"><summary>¿Cuál es el horario? ¿Abren los fines de semana?</summary><p>El horario diurno previsto es de 8 a. m. a 6 p. m. Pregúntanos qué días están disponibles, incluso los fines de semana.</p></details><details name="faq"><summary>¿Cuánto cuesta la guardería?</summary><p>Cuando nos llames, cuéntanos qué edad tiene tu hijo y qué días y horarios necesitas. <a href="tel:+13044044004">Llamar para consultar el precio</a></p></details><details name="faq"><summary>¿Mi hijo puede quedarse a dormir?</summary><p>El cuidado nocturno se coordina con anticipación y tiene un costo aparte. Llámanos con la fecha y el horario que necesitas. <a href="tel:+13044044004">Consultar por cuidado nocturno</a></p></details><details name="faq"><summary>¿Mi hijo puede ir después de la escuela?</summary><p>Cuéntanos qué días y horarios necesitas después de la escuela para ver qué opciones hay.</p></details><details name="faq"><summary>¿Qué hacen los niños durante el día?</summary><p>Hay tiempo para jugar al aire libre, hacer actividades según la edad, comer y tomar la siesta. Puedes ver un día de ejemplo, las actividades de la semana y el menú. <a href="#day">Ver la rutina diaria</a></p></details><details name="faq"><summary>¿Puedo conocer la guardería?</summary><p>Llámanos para acordar una visita y conocer a Juliana. <a href="tel:+13044044004">Llamar a Mazal Way</a></p></details><details name="faq"><summary>¿Dónde está la guardería?</summary><p>Estamos en Winnetka, CA 91306. Te damos la dirección cuando coordinemos tu visita.</p></details><details name="faq"><summary>¿Cómo puedo consultar la licencia?</summary><p>Busca TULCHINSKAIA FAMILY CHILD CARE, licencia n.º 195700853, en el registro de cuidado infantil de California. <a href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Ver el registro de CDSS</a></p></details><details name="faq"><summary>¿Se aparta un lugar al ponerme en contacto?</summary><p>El lugar se confirma cuando se completa la inscripción.</p></details></div></section></div><div class="band band--white"><section id="location" class="shell section location-section"><div><div class="location-emblem"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span></div><h2>Estamos en Winnetka</h2><p class="">Los Angeles, CA 91306. Te daremos la dirección al acordar la visita.</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Winnetka%2C%20CA%2091306" target="_blank" rel="noopener noreferrer">Abrir Google Maps</a></div><div class="map-frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26396.46119127919!2d-118.5756455!3d34.208777000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29bf24cbf42e3%3A0x1d11324abb450e3a!2sWinnetka%2C%20CA%2091306!5e0!3m2!1sen!2sus!4v1795579333762!5m2!1sen!2sus" title="Mapa de Winnetka, CA 91306" width="600" height="450" style="border:0" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></section></div></main><footer class="footer-wrap"><div class="shell footer-main">
+      <div><img src="../assets/mazal-way-logo-white-v2.svg" width="1737" height="449" alt="Mazal Way"><a class="footer-license" href="https://www.ccld.dss.ca.gov/carefacilitysearch/FacDetail/195700853">Licencia de cuidado infantil de California n.º 195700853</a></div>
+      <div class="footer-contact"><a class="footer-location" href="#location"><span class="location-pin" aria-hidden="true"><img src="../assets/clay-pin.svg" width="48" height="56" alt=""></span><strong>Winnetka, CA 91306</strong></a><div class="contact-actions footer-actions"><a class="contact-action whatsapp" href="https://wa.me/13044044004?text=%C2%A1Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20el%20cuidado%20en%20Mazal%20Way." aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><img class="ui-icon whatsapp-logo" src="../assets/whatsapp-official-green.svg" width="24" height="24" alt="" aria-hidden="true"><span>WhatsApp</span></a><a class="contact-action phone" href="tel:+13044044004" aria-label="Llamar +1 (304) 404-4004"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3 4 5c-2 5 10 17 15 15l2-3-5-3-2 2c-3-1-5-3-6-6l2-2Z"/></svg><span>+1 (304) 404-4004</span></a><button class="contact-action mail" type="button" disabled aria-label="Correo"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><span>Correo</span></button><button class="contact-action instagram" type="button" disabled aria-label="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></button></div></div>
+      <div class="footer-bottom"><span>© 2026 Mazal Way. Todos los derechos reservados.</span></div></div></footer><dialog id="media-dialog" aria-labelledby="media-title"><button type="button" class="dialog-close" aria-label="Cerrar"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button><h2 id="media-title"></h2><div id="media-content"></div></dialog><script>'use strict';
 document.querySelectorAll('.language a').forEach(link => link.addEventListener('click', () => {
   const destination = new URL(link.href);
   if (location.protocol === 'https:' || location.protocol === 'http:') {
@@ -377,6 +603,48 @@ mobileMenu.addEventListener('keydown', event => {
   mobileMenu.querySelector('summary').focus();
 });
 document.addEventListener('click',e=>{if(!mobileMenu.contains(e.target))mobileMenu.open=false;});
+
+const island = document.querySelector('.island');
+const updateIsland = () => island.classList.toggle('is-scrolled', window.scrollY > 32);
+updateIsland();
+window.addEventListener('scroll', updateIsland, {passive: true});
+
+const gallery = document.getElementById('gallery-track');
+if (gallery) {
+  const controls = document.querySelector('.gallery-controls');
+  const [previous, next] = controls.querySelectorAll('button');
+  const updateGallery = () => {
+    const end = gallery.scrollWidth - gallery.clientWidth;
+    controls.hidden = end <= 2;
+    previous.disabled = gallery.scrollLeft <= 2;
+    next.disabled = gallery.scrollLeft >= end - 2;
+  };
+  controls.addEventListener('click', event => {
+    const button = event.target.closest('[data-gallery-step]');
+    if (!button) return;
+    const positions = [...gallery.children].map(card => card.offsetLeft - gallery.firstElementChild.offsetLeft);
+    const forward = Number(button.dataset.galleryStep) > 0;
+    const current = gallery.scrollLeft;
+    const left = forward
+      ? positions.find(position => position > current + 2) ?? gallery.scrollWidth
+      : positions.findLast(position => position < current - 2) ?? 0;
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    gallery.scrollTo({left, behavior: reduceMotion ? 'auto' : 'smooth'});
+  });
+  gallery.addEventListener('scroll', updateGallery, {passive: true});
+  new ResizeObserver(updateGallery).observe(gallery);
+  updateGallery();
+}
+
+const activitySelect = document.querySelector('.activity-select');
+if (activitySelect) {
+  const panels = document.querySelectorAll('.activity-panel');
+  const showDay = day => panels.forEach(panel => { panel.hidden = panel.dataset.day !== day; });
+  showDay(activitySelect.querySelector('input:checked').value);
+  activitySelect.hidden = false;
+  activitySelect.addEventListener('change', event => showDay(event.target.value));
+}
+
 const dialog=document.getElementById('media-dialog');
 const media=document.getElementById('media-content');
 document.querySelectorAll('[data-media-kind]').forEach(button=>button.addEventListener('click',()=>{
